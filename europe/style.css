@@ -1,0 +1,19 @@
+/* Stylesheet */
+
+/* Set background colour */
+body
+{
+  background-color: rgb(114, 255, 79);
+  color: rgb(255, 0, 60);
+}
+
+h1
+{
+  background-color: rgb(255, 0, 60);
+  color: rgb(114, 255, 79);
+  font-family: times, calibri, sans-serif
+}
+p
+{
+  font-family: comic, helvetica, sans-serif
+}
