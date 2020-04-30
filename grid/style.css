@@ -21,13 +21,13 @@
 /* Formatting content area */
 .content-container{
   display:grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px 1fr) );
 }
 .card{
-  border: 20px solid rgb(50, 50, 50);
+  border: 40px solid rgb(50, 50, 50);
   border-radius: 100px;
-  overflow: hidden;
+  overflow: visible;
 }
 /* dealing with images in cards */
 .card > img {
