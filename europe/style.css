@@ -14,10 +14,7 @@ body{
 
 
 h2{
-  margin: 20px 0 20px 30px;
-}
-h2:hover{
-  margin: 20px 30px 20px 200px;
+  margin: 20px 0 20px 0px;
 }
 
 p{
@@ -25,15 +22,10 @@ p{
   margin-top: 7px;
   margin-bottom: 20px;
 }
-p:hover{
-  text-decoration: line-through;
-  margin-top: 50px;
-}
 
 ul{
   margin:2px 50px 2px 50px;
   list-style-type: square;
-  text-align: right;
 }
 
 /* Formatting links */
@@ -71,13 +63,16 @@ a:hover
 /* content formatting */
 .content-container{
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .sidebar{
   margin: 0px 20px 0px 10px;
+  border: 2px solid red;
+  border-radius: 7px;
 }
 
 .content{
+  grid-column: span 2;
 }
 
 
@@ -107,4 +102,10 @@ a:hover
 .card > img{
   max-width: 100%;
   height: auto;
+}
+@media only screen and (max-width: 960px){
+  .content-container{
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+  }
 }
