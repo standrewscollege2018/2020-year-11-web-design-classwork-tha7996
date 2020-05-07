@@ -1,0 +1,52 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-container{
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+}
+
+.nav{
+  max-width: 1720px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+/* Format links */
+.nav a{
+  color: white;
+  font-family: sans-serif, arial;
+  text-decoration: none;
+}
+.left-menu{
+  grid-column: 1;
+}
+.logo{
+  grid-column: 2;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+/* media query to display burger menu nad hide links */
+@media only screen and (max-width: 1000px) {
+  #nav-toggle{
+    display: inline-block;
+  }
+  .left-menu{
+    display:none;
+  }
+  #nav-toggle:checked ~ .left-menu {
+    display: grid;
+    grid-row: 2;
+    grid-column: span 3;
+    margin-top: 10px;
+  }
+  .left-menu a:hover{
+    background-color: grey;
+  }
+}
