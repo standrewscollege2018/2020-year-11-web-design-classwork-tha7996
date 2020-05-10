@@ -7,6 +7,7 @@ p{
 }
 
 
+
 /* Banner image formatting */
 .banner-image img{
   max-width: 100%;
@@ -19,10 +20,11 @@ p{
   display: grid;
   margin: 0 auto;
   grid-template-columns: 1 auto 1;
+  background-color: white;
 
   /* Make sticky */
   position: sticky;
-  top: 5px;
+  top: 0px;
 
 }
 .links{
@@ -34,6 +36,11 @@ p{
   padding: 0px 50px;
   color: navy;
   font-family: sans-serif, arial;
+}
+@media only screen and (max-width: 700px){
+  .links a{
+    padding: 0px 20px;
+  }
 }
 
 
@@ -83,6 +90,11 @@ p{
     grid-column: span 3;
   }
 }
+@media only screen and (max-width: 600px){
+  .date{
+    grid-column: span 3;
+  }
+}
 
 
 
@@ -97,4 +109,12 @@ p{
 .social-links{
   padding: 10px;
   grid-column: 2;
+}
+
+
+.other-pages *{
+  padding: 5px 10px;
+}
+.other-pages h2:{
+  padding: 0px 10px;
 }
