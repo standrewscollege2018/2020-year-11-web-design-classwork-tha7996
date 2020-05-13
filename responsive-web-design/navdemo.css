@@ -28,13 +28,19 @@
   grid-column: 2;
 }
 
-#nav-toggle {
+
+/* format bars */
+.burger-white{
+  color: white;
+}
+#nav-toggle, .burger-menu {
   display: none;
 }
 
+
 /* media query to display burger menu nad hide links */
 @media only screen and (max-width: 1000px) {
-  #nav-toggle{
+  .burger-menu{
     display: inline-block;
   }
   .left-menu{

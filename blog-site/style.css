@@ -1,0 +1,104 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+p {
+  padding: 10px;
+}
+h2{
+  padding: 10px;
+}
+h3{
+  padding: 10px;
+}
+
+/* Banner formatting */
+.banner{
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+
+  background-color: rgb(0, 105, 148);
+}
+.logo{
+  grid-column: 2;
+  font-family: serif;
+  padding: 10px;
+  color: rgb(237, 201, 175);
+  font-size: 30px;
+}
+.links{
+  grid-column: 5;
+  display: grid;
+  padding: 35px;
+  font-size: 21px;
+}
+.links a{
+  grid-row: 1;
+  text-decoration: none;
+  color: rgb(237, 201, 175);
+  padding: 0px 5px;
+}
+/* responsive web design for banner links */
+@media only screen and (max-width: 600px){
+  .links a{
+    grid-row: auto;
+  }
+  .links {
+    padding: 10px 35px;
+  }
+}
+
+
+/* body */
+.body{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-column-gap: 5px;
+}
+
+.sidebar{
+
+  height: 100%;
+
+  margin: 0px 5px 0px 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  background-color: rgb(32, 178, 170);
+}
+.sidebar ul{
+  padding: 10px;
+  list-style-type: none;
+}
+
+.main-content{
+  margin: 10px 10px 10px 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+}
+.card{
+  border-radius: 10px;
+  background-color: rgb(159, 226, 191);
+}
+
+.video{
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+img{
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card > img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+.bottom-banner{
+  text-align: center;
+  margin: 10px;
+}
