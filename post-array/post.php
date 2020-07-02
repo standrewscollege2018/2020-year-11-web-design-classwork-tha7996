@@ -7,9 +7,11 @@
   <body>
 
     <form action="greeting.php" method="post">
-      Enter number: <input type="int" name="number" placeholder="Enter number">
+      Enter username: <input type="text" name="username" placeholder="Enter username">
       <button type="submit" name="button">Submit</button>
     </form>
+
+
 
 
 

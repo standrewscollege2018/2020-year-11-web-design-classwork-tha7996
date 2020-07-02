@@ -7,6 +7,10 @@
   <body>
 
     <?php
+    // Check whether username exists
+      if (!isset($_POST['username'])){
+        header("Location: post.php");
+      }
       $username = $_POST['username'];
       echo "Greetings $username";
 

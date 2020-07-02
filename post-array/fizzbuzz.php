@@ -7,6 +7,10 @@
   <body>
 
     <?php
+      if (!isset($_POST['number'])){
+        header("location: greeting.php");
+      }
+
       $number = $_POST['number'];
 
       if ($number % 3 == 0){
@@ -20,6 +24,9 @@
       }
 
      ?>
+
+    <a href="get.php?number=1">Link 1</a>
+    <a href="get.php?number=2">Link 2</a>
 
 
 

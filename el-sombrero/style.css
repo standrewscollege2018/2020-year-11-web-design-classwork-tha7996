@@ -1,0 +1,198 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  padding: 3px;
+  padding-bottom: 5px;
+  color: rgb(199, 0, 0);
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+
+/* navbar setup */
+.navbar-container{
+  /* grid setup */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  /* colors and style */
+  background-color: rgb(249, 193, 38);
+  color: rgb(199, 0, 0);
+}
+/* format logo */
+.logo img{
+  max-width: 75%;
+  min-width: 100px;
+}
+/* format navbar links */
+.navbar-link{
+  grid-column: span 4;
+  text-align: center;
+  /* grid of links */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1%;
+  padding-right: 20px;
+}
+.navbar-link a{
+  padding-top: 25%;
+  font-family: sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(199, 0, 0);
+}
+/* hide burger icon */
+#nav-toggle, .burger-menu {
+  display: none;
+}
+/* reduce font size of navbar links */
+@media only screen and (max-width: 700px){
+  .navbar-link a{
+    font-size: 25px;
+  }
+}
+/* navbar -> burger menu */
+@media only screen and (max-width: 650px) {
+
+  .burger-menu{
+    display: inline-block;
+    grid-column: 5;
+    padding-top: 25%;
+    padding-left: 50%;
+    width: 100px;
+  }
+  .navbar-link{
+    display: none;
+  }
+  #nav-toggle:checked ~ .navbar-link {
+    display: grid;
+    grid-row: 2;
+    grid-column: span 5;
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+  }
+  .navbar-link a:{
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+/* bottom banner formatting */
+.bottom-banner-container{
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  /* colors and style */
+  background-color: rgb(249, 193, 38);
+  color: rgb(199, 0, 0);
+
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.bottom-text{
+  padding: 10px;
+}
+@media only screen and (max-wdith: 600px){
+  .bottom-text{
+    font-size: 10px;
+  }
+}
+
+
+
+/* home screen text Formatting */
+.home-text{
+  position: absolute;
+  margin-top: 6%;
+  text-align: center;
+  font-family: impact;
+  color: white;
+  font-size: 50px;
+  /* add border to font */
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+.menu-content{
+  display: grid;
+  grid-template-columns: 20% auto;
+
+}
+.menu-filters{
+  display: grid;
+  grid-template-columns: 1fr;
+
+  background-color: black;
+}
+.menu-filters a{
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.menu-items{
+  padding: 10px;
+}
+.menu-items p, h3{
+  padding: 3px;
+  color: rgb(199, 0, 0);
+  font-family: sans-serif;
+}
+.menu-items h1{
+  padding: 3px;
+  padding-bottom: 5px;
+  color: rgb(169, 0, 0);
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+
+.location-container{
+  display: grid;
+  grid-template-columns: auto 1fr auto
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.location-map{
+  grid-column: 2;
+  padding: 20px;
+}
+.location-map img{
+  max-width: 100%;
+  height: auto;
+}
+.location-text h1{
+  padding: 3px;
+  padding-bottom: 5px;
+  color: rgb(169, 0, 0);
+}
+.location-text-container{
+  grid-row: 2;
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.location-text{
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.booking-container{
+  margin-left: 10px;
+}
+.booking-form input, select, button{
+  padding: 12px 20px;
+  margin: 10px;
+}
+.booking-form label{
+  padding: 12px 12px 5px 12px;
+  font-family: sans-serif;
+}
+.booking-form button{
+  cursor: pointer;
+}
